@@ -36,3 +36,64 @@
     transform: rotate(360deg);
   }
 }
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav a {
+  margin: 0 10px;
+  color: aqua;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+figure {
+  position: relative;
+  filter: contrast(1.1) saturate(1.9) sepia(0) grayscale(0.3);
+}
+
+figure::before {
+  z-index: 1;
+  mix-blend-mode: multiply;
+  box-shadow: 0 0 250px blue inset;
+  background: rgba(13, 198, 0, 0.3);
+}
+
+figure::after {
+  z-index: 1;
+  mix-blend-mode: multiply;
+  box-shadow: 0 0 150px rgb(102, 0, 255) inset;
+  background: rgba(125, 100, 0, 0.3);
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+img {
+  width: 400px;
+  padding: 10px 10px 10px;
+  color: #282c34;
+  border-radius: 20px;
+  border: 5px solid green;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  top: 0;
+  left: 0;
+  position: relative;
+  margin: 2px 4px;
+  filter: saturate(3) contrast(3) brightness(1.1);
+}

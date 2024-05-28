@@ -1,0 +1,14 @@
+h2 {
+    font-size: 35px;
+    text-align: center;
+    background-image: url('/src/img/game.png') auto;
+    background-position: center;
+    color: rgb(203, 203, 183);
+    padding: 15px 15px 15px 15px;
+    height: 50px;
+    border: 5px #ff00bf;
+    border-radius: 20px;
+    background: #15cc9e;
+    
+
+}
